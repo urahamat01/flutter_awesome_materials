@@ -11,6 +11,7 @@ class _AnimatedContainerAppState extends State<AnimatedContainerApp> {
   // when the user taps a FloatingActionButton.
   double _width = 50;
   double _height = 50;
+
   Color _color = Colors.green;
   BorderRadiusGeometry _borderRadius = BorderRadius.circular(8);
 
