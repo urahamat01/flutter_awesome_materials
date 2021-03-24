@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'animation/animated-container.dart';
+import 'development/ui/widgets/material/list_dialogbox.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,11 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.purple,
+        buttonColor: Colors.purple,
+        buttonTheme: const ButtonThemeData(
+          textTheme: ButtonTextTheme.primary,
+        ),
+      ),
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter Awesome Material'),
         ),
-        body: AnimatedContainerApp(),
+        body: ListDialogbox(),
 
         // body: DraggableCard(
         //   child: FlutterLogo(
