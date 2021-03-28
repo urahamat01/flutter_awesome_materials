@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'development/ui/widgets/material/list_dialogbox.dart';
 import 'forms/retrieve_text.dart';
+import 'gestures/AddMaterialTouchRipples.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Awesome Material'),
         ),
-        body: MyCustomForm(),
+        body: MyHomePage(),
 
         // body: DraggableCard(
         //   child: FlutterLogo(
