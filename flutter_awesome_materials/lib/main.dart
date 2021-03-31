@@ -4,6 +4,8 @@ import 'development/ui/widgets/material/list_dialogbox.dart';
 import 'forms/retrieve_text.dart';
 import 'gestures/AddMaterialTouchRipples.dart';
 import 'gestures/GestureDetectors.dart';
+import 'lists/CreateGridList.dart';
+import 'lists/CreateHorizontalList.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Awesome Material'),
         ),
-        body: GestureDetect(),
+        body: CreateGridViews(),
 
         // body: DraggableCard(
         //   child: FlutterLogo(
