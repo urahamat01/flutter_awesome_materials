@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowMaterialGrid: false,
       theme: ThemeData(
         primarySwatch: Colors.purple,
         buttonColor: Colors.purple,
@@ -32,9 +33,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Awesome Material'),
-        ),
         body: DisplayingListsOfData(),
 
         // body: DraggableCard(
