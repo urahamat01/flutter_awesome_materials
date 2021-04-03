@@ -6,11 +6,19 @@ import 'gestures/AddMaterialTouchRipples.dart';
 import 'gestures/GestureDetectors.dart';
 import 'lists/CreateGridList.dart';
 import 'lists/CreateHorizontalList.dart';
+import 'lists/DisplayingListsOfData.dart';
 
 void main() {
   runApp(MyApp());
   //runApp(MaterialApp(home: MyApp()));
 }
+
+// items: List<ListItem>.generate(
+// 1000,
+// (i) => i % 6 == 0
+// ? HeadingItem("Heading $i")
+// : MessageItem("Sender $i", "Message body $i"),
+// ),
 
 class MyApp extends StatelessWidget {
   @override
@@ -27,7 +35,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Awesome Material'),
         ),
-        body: CreateGridViews(),
+        body: DisplayingListsOfData(),
 
         // body: DraggableCard(
         //   child: FlutterLogo(
