@@ -7,6 +7,7 @@ import 'gestures/GestureDetectors.dart';
 import 'lists/CreateGridList.dart';
 import 'lists/CreateHorizontalList.dart';
 import 'lists/DisplayingListsOfData.dart';
+import 'navigation/OftenHelpfulToGuide.dart';
 
 void main() {
   runApp(MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        body: DisplayingListsOfData(),
+        body: MainScreen(),
 
         // body: DraggableCard(
         //   child: FlutterLogo(
