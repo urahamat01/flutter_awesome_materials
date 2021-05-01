@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_awesome_materials/opacity_animation/MainPageOpacity.dart';
 
 import '../favourites_page.dart';
 import '../people_page.dart';
@@ -9,8 +10,8 @@ class NavigationDrawerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final name = 'Sarah Abs';
-    final email = 'sarah@abs.com';
+    final name = 'Rahamat With';
+    final email = 'rahamat@gmail.com';
     final urlImage =
         'https://cdn.iconscout.com/icon/free/png-256/flutter-2752187-2285004.png';
 
@@ -26,7 +27,7 @@ class NavigationDrawerWidget extends StatelessWidget {
               onClicked: () => Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => UserPage(
-                    name: 'Sarah Abs',
+                    name: 'Rahamat With',
                     urlImage: urlImage,
                   ),
                 ),
@@ -98,7 +99,7 @@ class NavigationDrawerWidget extends StatelessWidget {
           child: Row(
             children: [
               CircleAvatar(radius: 30, backgroundImage: NetworkImage(urlImage)),
-              SizedBox(width: 20),
+              SizedBox(width: 10),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -176,6 +177,11 @@ class NavigationDrawerWidget extends StatelessWidget {
       case 1:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => FavouritesPage(),
+        ));
+        break;
+      case 2:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => MainPageOpacity(),
         ));
         break;
     }
