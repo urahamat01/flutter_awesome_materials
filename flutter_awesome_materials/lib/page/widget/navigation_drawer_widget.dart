@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_awesome_materials/FlutterNativeAds/flutter_native_admob_use.dart';
 import 'package:flutter_awesome_materials/opacity_animation/MainPageOpacity.dart';
 
 import '../favourites_page.dart';
@@ -76,6 +77,12 @@ class NavigationDrawerWidget extends StatelessWidget {
                     text: 'Notifications',
                     icon: Icons.notifications_outlined,
                     onClicked: () => selectedItem(context, 5),
+                  ),
+                  const SizedBox(height: 16),
+                  buildMenuItem(
+                    text: 'NativeAdmob',
+                    icon: Icons.add_moderator,
+                    onClicked: () => selectedItem(context, 6),
                   ),
                 ],
               ),
@@ -184,6 +191,12 @@ class NavigationDrawerWidget extends StatelessWidget {
           builder: (context) => MainPageOpacity(),
         ));
         break;
+      case 5:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => FlutterNative(),
+        ));
+        break;
+      default:
     }
   }
 }

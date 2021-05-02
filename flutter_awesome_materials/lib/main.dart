@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome_materials/GridView_InListView/GridViewCardWidget/HomeScreen.dart';
 
+import 'FlutterNativeAds/flutter_native_admob_use.dart';
 import 'page/widget/button_widget.dart';
 import 'page/widget/navigation_drawer_widget.dart';
 
@@ -34,8 +35,9 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter Awesome Material'),
         ),
-        body: Home_Screen(),
+        //body: Home_Screen(),
         //body: MainPageOpacity(),
+        body: FlutterNative(),
 
         // body: DraggableCard(
         //   child: FlutterLogo(
