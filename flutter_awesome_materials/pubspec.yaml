@@ -27,8 +27,9 @@ dependencies:
   google_fonts:
   flutter_staggered_grid_view:
   sqflite:
-  flutter_native_admob: ^2.1.0+3
+  flutter_native_admob:
   cached_network_image: ^2.2.0+1
+  admob_flutter: ^1.0.1
 
 
   # The following adds the Cupertino Icons font to your application.
