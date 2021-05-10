@@ -7,6 +7,10 @@ import 'FlutterNativeAds/flutter_native_admob_use.dart';
 import 'auth/flutterLoginAnimation/home_page_login.dart';
 import 'navigation/collapsible_navigation/commons/collapsing_navigation_drawer_widget.dart';
 
+import 'development/ui/widgets/material/list_dialogbox.dart';
+import 'forms/retrieve_text.dart';
+import 'opacity_animation/MainPageOpacity.dart';
+
 void main() {
   runApp(MyApp());
   //runApp(MaterialApp(home: MyApp()));
@@ -38,11 +42,14 @@ class MyApp extends StatelessWidget {
           title: const Text('Flutter Awesome Material'),
           centerTitle: true,
         ),
-        //body: Home_Screen(),
-        //body: MainPageOpacity(),
-        body: FlutterNative(),
 
-        // body: HomePageLogin(),
+        backgroundColor: Colors.blue,
+
+        body: Home_Screen(),
+        // body: MainPageOpacity(),
+        //body: FlutterNative(),
+        //body: HomePageLogin(),
+        //body: MyCustomForm(),
         // body: DraggableCard(
         //   child: FlutterLogo(
         //     size: 128,

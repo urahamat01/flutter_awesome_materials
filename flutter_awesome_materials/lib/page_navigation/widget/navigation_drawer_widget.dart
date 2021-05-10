@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_awesome_materials/FlutterNativeAds/flutter_native_admob_use.dart';
 import 'package:flutter_awesome_materials/auth/login_signup/HomePageMain.dart';
 import 'package:flutter_awesome_materials/opacity_animation/MainPageOpacity.dart';
+import 'package:flutter_awesome_materials/textfield_example/MainPageTextField.dart';
 
 import '../favourites_page.dart';
 import '../people_page.dart';
@@ -192,9 +193,16 @@ class NavigationDrawerWidget extends StatelessWidget {
           builder: (context) => MainPageOpacity(),
         ));
         break;
+
       case 5:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => FlutterNative(),
+        ));
+        break;
+
+      case 3:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => MainPageTextField(),
         ));
         break;
       default:
