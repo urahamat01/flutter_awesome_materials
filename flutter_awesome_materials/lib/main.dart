@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome_materials/GridView_InListView/GridViewCardWidget/HomeScreen.dart';
+import 'package:flutter_awesome_materials/page_navigation/widget/button_widget.dart';
+import 'package:flutter_awesome_materials/page_navigation/widget/navigation_drawer_widget.dart';
 
 import 'FlutterNativeAds/flutter_native_admob_use.dart';
-import 'page/widget/button_widget.dart';
-import 'page/widget/navigation_drawer_widget.dart';
+import 'auth/flutterLoginAnimation/home_page_login.dart';
+import 'navigation/collapsible_navigation/commons/collapsing_navigation_drawer_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,14 +33,16 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         drawer: NavigationDrawerWidget(),
-        endDrawer: NavigationDrawerWidget(),
+        endDrawer: CollapsingNavigationDrawer(),
         appBar: AppBar(
           title: const Text('Flutter Awesome Material'),
+          centerTitle: true,
         ),
         //body: Home_Screen(),
         //body: MainPageOpacity(),
         body: FlutterNative(),
 
+        // body: HomePageLogin(),
         // body: DraggableCard(
         //   child: FlutterLogo(
         //     size: 128,

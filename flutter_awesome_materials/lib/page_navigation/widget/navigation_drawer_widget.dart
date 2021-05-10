@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome_materials/FlutterNativeAds/flutter_native_admob_use.dart';
+import 'package:flutter_awesome_materials/auth/login_signup/HomePageMain.dart';
 import 'package:flutter_awesome_materials/opacity_animation/MainPageOpacity.dart';
 
 import '../favourites_page.dart';
@@ -183,7 +184,7 @@ class NavigationDrawerWidget extends StatelessWidget {
         break;
       case 1:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => FavouritesPage(),
+          builder: (context) => HomePageMain(),
         ));
         break;
       case 2:
