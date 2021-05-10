@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome_materials/GridView_InListView/GridViewCardWidget/HomeScreen.dart';
 
+<<<<<<< HEAD
 import 'page/widget/button_widget.dart';
 import 'page/widget/navigation_drawer_widget.dart';
+=======
+import 'development/ui/widgets/material/list_dialogbox.dart';
+import 'forms/retrieve_text.dart';
+>>>>>>> 4fd919d... retrieve_text
 
 void main() {
   runApp(MyApp());
@@ -33,9 +38,13 @@ class MyApp extends StatelessWidget {
         endDrawer: NavigationDrawerWidget(),
         appBar: AppBar(
           title: const Text('Flutter Awesome Material'),
+          backgroundColor: Colors.blue,
         ),
-        body: Home_Screen(),
+
+        //body: Home_Screen(),
         //body: MainPageOpacity(),
+
+        body: MyCustomForm(),
 
         // body: DraggableCard(
         //   child: FlutterLogo(

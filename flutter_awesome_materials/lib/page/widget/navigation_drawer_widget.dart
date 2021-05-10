@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome_materials/opacity_animation/MainPageOpacity.dart';
+import 'package:flutter_awesome_materials/textfield_example/MainPageTextField.dart';
 
 import '../favourites_page.dart';
 import '../people_page.dart';
@@ -182,6 +183,11 @@ class NavigationDrawerWidget extends StatelessWidget {
       case 2:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => MainPageOpacity(),
+        ));
+        break;
+      case 3:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => MainPageTextField(),
         ));
         break;
     }
